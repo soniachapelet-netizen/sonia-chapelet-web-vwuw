@@ -68,3 +68,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.page-shell {
+  padding-top: 230px;
+}
