@@ -451,7 +451,6 @@ button {
     letter-spacing: 0.14em;
   }
 
-  /* MENÚ EN UNA FILA Y SIN CORTES */
   .nav-links {
     display: flex;
     justify-content: space-between;
@@ -484,16 +483,15 @@ button {
     display: block;
   }
 
-  /* GAP HERO CORREGIDO */
   .home-view {
     display: block;
     min-height: auto;
     padding: 0 16px 18px;
-    margin-top: -95px;
+    margin-top: -150px;
   }
 
   .hero-top {
-    margin: 0 0 6px;
+    margin: 0 0 4px;
   }
 
   .hero-quote {
