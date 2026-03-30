@@ -29,7 +29,7 @@ button {
 }
 
 .page-shell {
-  min-height: 100vh;
+  min-height: auto;
   padding-top: 150px;
 }
 
@@ -438,10 +438,12 @@ button {
   }
 
   .header-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
-    text-align: center;
     padding: 0 16px;
+    text-align: center;
   }
 
   .site-title {
@@ -450,15 +452,19 @@ button {
   }
 
   .nav-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px 18px;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    overflow-x: auto;
   }
 
   .nav-links button {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     padding-bottom: 2px;
+    flex: 0 0 auto;
   }
 
   .lang-switch {
@@ -473,15 +479,18 @@ button {
     padding-top: 0;
   }
 
+  .view-fade {
+    display: block;
+  }
+
   .home-view {
-    display: grid;
-    align-content: start;
-    gap: 10px;
+    display: block;
+    min-height: auto;
     padding: 8px 16px 18px;
   }
 
   .hero-top {
-    margin-bottom: 0;
+    margin: 0 0 10px;
   }
 
   .hero-quote {
@@ -506,6 +515,7 @@ button {
   }
 
   .inner-view {
+    min-height: auto;
     padding: 30px 20px 50px;
   }
 
