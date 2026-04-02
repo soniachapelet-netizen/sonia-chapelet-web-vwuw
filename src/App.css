@@ -36,3 +36,31 @@
 .hero-quote {
   font-size: 20px;
 }
+
+.site-header a.site-title,
+.site-header .nav-links a,
+.site-header .lang-switch a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.site-header .nav-links a.active,
+.site-header .lang-switch a.active {
+  font-weight: 600;
+}
+
+.portfolio-categories a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem 0.6rem;
+}
+
+.portfolio-categories a.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
