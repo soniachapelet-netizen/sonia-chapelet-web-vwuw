@@ -1,7 +1,7 @@
 .home-shell,
 .page-shell {
   min-height: 100vh;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) - 20px);
 }
 
 .home-view {
@@ -27,4 +27,8 @@
   object-fit: contain;
   object-position: center;
   border-radius: 22px;
+}.hero-top {
+  margin-bottom: 2px;
+}.hero-quote {
+  font-size: 18px;
 }
