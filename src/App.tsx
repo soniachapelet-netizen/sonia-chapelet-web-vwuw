@@ -175,50 +175,42 @@ function App() {
       alt: "Retrato familiar íntimo",
     },
     {
-      src: "/assets/newborn_1.jpg",
-      alt: "Recién nacido en fotografía artística",
-    },
-    {
       src: "/assets/maternity_1.jpg",
-      alt: "Fotografía de maternidad en tonos suaves",
+      alt: "Maternidad en tonos suaves",
     },
     {
-      src: "/assets/maternity_2.jpg",
-      alt: "Maternidad en interior con luz natural",
+      src: "/assets/portrait_2.jpg",
+      alt: "Retrato familiar íntimo en exterior",
     },
   ];
 
   const trabajo: PortfolioItem[] = [
     {
-      src: "/assets/maternity_1.jpg",
+      src: "/assets/trabajo-bebe-1.png",
+      alt: "Bebé dormida con tutú rosa",
+    },
+    {
+      src: "/assets/trabajo-bebe-2.png",
+      alt: "Bebé dormido arropado en exterior",
+    },
+    {
+      src: "/assets/maternity_2.jpg",
       alt: "Trabajo fotográfico de maternidad",
-    },
-    {
-      src: "/assets/newborn_1.jpg",
-      alt: "Trabajo fotográfico de recién nacido",
-    },
-    {
-      src: "/assets/portrait_1.jpg",
-      alt: "Trabajo fotográfico familiar",
     },
   ];
 
   const proyectos: PortfolioItem[] = [
     {
-      src: "/assets/portrait_2.jpg",
+      src: "/assets/newborn_1.jpg",
       alt: "Proyecto artístico de retrato",
     },
     {
-      src: "/assets/maternity_2.jpg",
+      src: "/assets/portrait_1.jpg",
       alt: "Proyecto artístico de maternidad",
     },
     {
-      src: "/assets/newborn_1.jpg",
+      src: "/assets/portrait_2.jpg",
       alt: "Proyecto artístico de recién nacido",
-    },
-    {
-      src: "/assets/portrait_1.jpg",
-      alt: "Proyecto artístico familiar",
     },
   ];
 
