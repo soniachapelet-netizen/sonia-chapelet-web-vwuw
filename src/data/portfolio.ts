@@ -33,6 +33,8 @@ export type PortfolioItem = {
 };
 
 export const heroImage: ResponsiveImgMeta = heroGrid;
+// Hero/miniaturas simples (sin `srcset`) para evitar fallos si `as=img` cambia.
+export const heroSrc: string = p1l;
 
 export const retratos: PortfolioItem[] = [
   { grid: r1g, lightbox: r1l, alt: "Bebé durmiendo bajo un árbol con luz natural suave" },

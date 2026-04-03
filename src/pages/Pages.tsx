@@ -5,10 +5,9 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-import { ResponsiveImage } from "../components/ResponsiveImage";
 import { Seo } from "../components/Seo";
 import {
-  heroImage,
+  heroSrc,
   proyectos,
   retratos,
   trabajo,
@@ -44,12 +43,12 @@ export function HomePage() {
           </div>
 
           <div className="hero-stage">
-            <ResponsiveImage
-              meta={heroImage}
+            <img
+              src={heroSrc}
               alt={t.alt.hero}
               className="hero-main-image"
-              sizes="(max-width: 720px) 100vw, min(1200px, 92vw)"
-              fetchPriority="high"
+              loading="eager"
+              decoding="async"
             />
           </div>
         </section>
@@ -180,17 +179,17 @@ export function PortfolioPage() {
     <div className="portfolio-grid">
       {items.map((item) => (
         <button
-          key={item.grid.src}
+          key={item.lightbox}
           type="button"
           className="portfolio-item"
           onClick={() => setLightbox(item.lightbox)}
           aria-label={item.alt}
         >
-          <ResponsiveImage
-            meta={item.grid}
+          <img
+            src={item.lightbox}
             alt={item.alt}
-            sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
             loading="lazy"
+            decoding="async"
           />
         </button>
       ))}
