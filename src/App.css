@@ -175,7 +175,9 @@ a {
   line-height: 0.95;
   font-weight: 300;
   letter-spacing: -0.035em;
-  max-width: 13ch;
+  max-width: none;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero-quote span {
