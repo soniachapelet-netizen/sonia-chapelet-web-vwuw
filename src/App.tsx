@@ -1,17 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import proyecto1 from "./assets/images/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg";
-import proyecto2 from "./assets/images/proyectos/sonia-chapelet-retrato-mujer-morena-delante-de-un-faro-en-alicante.jpg";
-import proyecto3 from "./assets/images/proyectos/sonia-chapelet-retrato-perfil-mujer-joven-rubia-con-sol-en-la-cara.jpg";
-import proyecto4 from "./assets/images/proyectos/sonia-chapelet-retrato-de-mujer-rubia-con-abrigo-simil-piel.jpg";
-
-import retrato1 from "./assets/images/retratos/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg";
-import retrato3 from "./assets/images/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg";
-import retrato4 from "./assets/images/retratos/sonia-chapelet-retrato-madre-amamantando.jpg";
-
-import trabajo1 from "./assets/images/trabajo/sonia-chapelet-madre-sentada-con-pie-en-silla-amamantando.jpg";
-
 type Section = "home" | "sobre-mi" | "servicios" | "portfolio" | "contacto";
 type PortfolioCategory = "retratos" | "trabajo" | "proyectos";
 type Language = "es" | "en";
@@ -178,42 +167,58 @@ function App() {
 
   const retratos: PortfolioItem[] = [
     {
-      src: retrato1,
-      alt: "Bebé durmiendo bajo un árbol con luz natural suave",
+      src: "/assets/portrait_1.jpg",
+      alt: "Retrato familiar en exterior",
     },
     {
-      src: retrato3,
-      alt: "Madre de espaldas con su bebé en brazos en un retrato íntimo",
+      src: "/assets/portrait_2.jpg",
+      alt: "Retrato familiar íntimo",
     },
     {
-      src: retrato4,
-      alt: "Madre amamantando a su bebé con luz natural, fotografía de maternidad",
+      src: "/assets/newborn_1.jpg",
+      alt: "Recién nacido en fotografía artística",
+    },
+    {
+      src: "/assets/maternity_1.jpg",
+      alt: "Fotografía de maternidad en tonos suaves",
+    },
+    {
+      src: "/assets/maternity_2.jpg",
+      alt: "Maternidad en interior con luz natural",
     },
   ];
 
   const trabajo: PortfolioItem[] = [
     {
-      src: trabajo1,
-      alt: "Madre amamantando sentada en interior con luz lateral suave",
+      src: "/assets/maternity_1.jpg",
+      alt: "Trabajo fotográfico de maternidad",
+    },
+    {
+      src: "/assets/newborn_1.jpg",
+      alt: "Trabajo fotográfico de recién nacido",
+    },
+    {
+      src: "/assets/portrait_1.jpg",
+      alt: "Trabajo fotográfico familiar",
     },
   ];
 
   const proyectos: PortfolioItem[] = [
     {
-      src: proyecto1,
-      alt: "Retrato de mujer joven rubia con luz natural, fotografía autoral",
+      src: "/assets/portrait_2.jpg",
+      alt: "Proyecto artístico de retrato",
     },
     {
-      src: proyecto2,
-      alt: "Retrato de mujer frente a un faro en Alicante, fotografía artística en exterior",
+      src: "/assets/maternity_2.jpg",
+      alt: "Proyecto artístico de maternidad",
     },
     {
-      src: proyecto3,
-      alt: "Retrato de perfil de mujer joven con luz de sol en el rostro, fotografía autoral",
+      src: "/assets/newborn_1.jpg",
+      alt: "Proyecto artístico de recién nacido",
     },
     {
-      src: proyecto4,
-      alt: "Retrato de mujer rubia con abrigo simil piel, fotografía editorial con luz cálida",
+      src: "/assets/portrait_1.jpg",
+      alt: "Proyecto artístico familiar",
     },
   ];
 
