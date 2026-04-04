@@ -223,34 +223,38 @@ function App() {
           </section>
         )}
         {activeSection === "portfolio" && (
-          <section className="section-content">
-            <h2>{t.portfolio.title}</h2>
-            <nav className="portfolio-nav portfolio-categories" aria-label="Portfolio">
-              <button
-                type="button"
-                className={activePortfolioCategory === "retratos" ? "active" : ""}
-                onClick={() => setActivePortfolioCategory("retratos")}
-              >
-                {t.portfolio.retratos}
-              </button>
-              <button
-                type="button"
-                className={activePortfolioCategory === "trabajo" ? "active" : ""}
-                onClick={() => setActivePortfolioCategory("trabajo")}
-              >
-                {t.portfolio.trabajo}
-              </button>
-              <button
-                type="button"
-                className={activePortfolioCategory === "proyectos" ? "active" : ""}
-                onClick={() => setActivePortfolioCategory("proyectos")}
-              >
-                {t.portfolio.proyectos}
-              </button>
-            </nav>
-            {activePortfolioCategory === "retratos" && renderPortfolioGrid(retratos)}
-            {activePortfolioCategory === "trabajo" && renderPortfolioGrid(trabajo)}
-            {activePortfolioCategory === "proyectos" && renderPortfolioGrid(proyectos)}
+          <section className="section-content section-portfolio">
+            <div className="portfolio-header">
+              <h2>{t.portfolio.title}</h2>
+              <nav className="portfolio-nav portfolio-categories" aria-label="Portfolio">
+                <button
+                  type="button"
+                  className={activePortfolioCategory === "retratos" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("retratos")}
+                >
+                  {t.portfolio.retratos}
+                </button>
+                <button
+                  type="button"
+                  className={activePortfolioCategory === "trabajo" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("trabajo")}
+                >
+                  {t.portfolio.trabajo}
+                </button>
+                <button
+                  type="button"
+                  className={activePortfolioCategory === "proyectos" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("proyectos")}
+                >
+                  {t.portfolio.proyectos}
+                </button>
+              </nav>
+            </div>
+            <div className="portfolio-grid-wrap">
+              {activePortfolioCategory === "retratos" && renderPortfolioGrid(retratos)}
+              {activePortfolioCategory === "trabajo" && renderPortfolioGrid(trabajo)}
+              {activePortfolioCategory === "proyectos" && renderPortfolioGrid(proyectos)}
+            </div>
           </section>
         )}
         {activeSection === "contacto" && (
