@@ -61,25 +61,76 @@ function App() {
   }[language];
 
   const retratos: PortfolioItem[] = [
-    { src: "/assets/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg", alt: "madre e hijo" },
-    { src: "/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg", alt: "maternidad" },
-    { src: "/assets/retratos/sonia-chapelet-retrato-adolescente-sentada-en-escalera-con-paraguas-transparente.jpg", alt: "adolescente" },
-    { src: "/assets/retratos/sonia-chapelet-retrato-madre-amamantando.jpg", alt: "amamantando" },
-    { src: "/assets/retratos/sonia-chapelet-mujer-embarazada-parada-de-espaldas-frente-espejo.jpg", alt: "embarazo" },
-    { src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-sentada-en-el-piso-envuelta-en-tules.jpg", alt: "tules" }
+    {
+      src: "/assets/retratos/image-d9a43368-731b-415a-beb0-823802db32f9.jpg",
+      alt: "Retrato de maternidad en estudio, fondo claro",
+    },
+    {
+      src: "/assets/retratos/image-30cdb3de-8870-42c5-ab09-9cbf1267993c.jpg",
+      alt: "Retrato en blanco y negro con paraguas",
+    },
+    {
+      src: "/assets/retratos/image-0a145169-565b-41c4-b0a2-2e51bd89d3c9.jpg",
+      alt: "Maternidad con espejo",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-retrato-adolescente-sentada-en-escalera-con-paraguas-transparente.jpg",
+      alt: "Adolescente sentada en escalera con paraguas",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-mujer-embarazada-parada-de-espaldas-frente-espejo.jpg",
+      alt: "Mujer embarazada de espaldas frente a espejo",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-sentada-en-el-piso-envuelta-en-tules.jpg",
+      alt: "Retrato de embarazo envuelta en tul",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-retrato-madre-amamantando.jpg",
+      alt: "Madre amamantando, retrato íntimo",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg",
+      alt: "Madre con bebé, retrato en silla",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-madre-sentada-con-pie-en-silla-amamantando.jpg",
+      alt: "Madre amamantando en interior con plantas",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg",
+      alt: "Madre de espaldas con bebé",
+    },
   ];
 
   const trabajo: PortfolioItem[] = [
-    { src: "/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg", alt: "bebe siesta" },
-    { src: "/assets/trabajo/sonia-chapelet-madre-sentada-con-pie-en-silla-amamantando.jpg", alt: "madre amamantando" },
-    { src: "/assets/trabajo/sonia-chapelet-retrato-niña-recien-nacida-durmiendo-con-tutu.jpg", alt: "newborn" }
+    {
+      src: "/assets/trabajo/sonia-chapelet-retrato-newborn-nin_a-durmiento-con-tutu-rosa.jpg",
+      alt: "Newborn dormida con tutú rosa",
+    },
+    {
+      src: "/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg",
+      alt: "Bebé dormido arropado en exterior",
+    },
   ];
 
   const proyectos: PortfolioItem[] = [
-    { src: "/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg", alt: "mujer rubia" },
-    { src: "/assets/proyectos/sonia-chapelet-retrato-mujer-morena-delante-de-un-faro-en-alicante.jpg", alt: "mujer faro" },
-    { src: "/assets/proyectos/sonia-chapelet-retrato-mujer-rubia-joven-con-abrigo-simil-piel.jpg", alt: "abrigo piel" },
-    { src: "/assets/proyectos/sonia-chapelet-retrato-perfil-mujer-joven-rubia-con-sol-en-la-cara.jpg", alt: "perfil sol" }
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg",
+      alt: "Retrato de mujer joven rubia",
+    },
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-morena-delante-de-un-faro-en-alicante.jpg",
+      alt: "Retrato con faro en Alicante",
+    },
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-rubia-joven-con-abrigo-simil-piel.jpg",
+      alt: "Retrato editorial con abrigo",
+    },
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-perfil-mujer-joven-rubia-con-sol-en-la-cara.jpg",
+      alt: "Retrato de perfil con luz de sol",
+    },
   ];
 
   const renderPortfolioGrid = (items: PortfolioItem[]) => (
@@ -113,7 +164,12 @@ function App() {
       <main>
         {activeSection === "home" && (
           <section className="home-section">
-            <div className="hero-image"><img src="/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg" alt="Hero" /></div>
+            <div className="hero-image">
+              <img
+                src="/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg"
+                alt={t.alt.hero}
+              />
+            </div>
             <h1 className="quote">{t.home.quote}</h1>
           </section>
         )}
