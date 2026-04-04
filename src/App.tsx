@@ -62,44 +62,28 @@ function App() {
 
   const retratos: PortfolioItem[] = [
     {
-      src: "/assets/retratos/image-d9a43368-731b-415a-beb0-823802db32f9.jpg",
-      alt: "Retrato de maternidad en estudio, fondo claro",
-    },
-    {
-      src: "/assets/retratos/image-30cdb3de-8870-42c5-ab09-9cbf1267993c.jpg",
-      alt: "Retrato en blanco y negro con paraguas",
-    },
-    {
-      src: "/assets/retratos/image-0a145169-565b-41c4-b0a2-2e51bd89d3c9.jpg",
-      alt: "Maternidad con espejo",
-    },
-    {
-      src: "/assets/retratos/sonia-chapelet-retrato-adolescente-sentada-en-escalera-con-paraguas-transparente.jpg",
-      alt: "Adolescente sentada en escalera con paraguas",
-    },
-    {
-      src: "/assets/retratos/sonia-chapelet-mujer-embarazada-parada-de-espaldas-frente-espejo.jpg",
-      alt: "Mujer embarazada de espaldas frente a espejo",
-    },
-    {
-      src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-sentada-en-el-piso-envuelta-en-tules.jpg",
-      alt: "Retrato de embarazo envuelta en tul",
+      src: "/assets/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg",
+      alt: "Madre de espaldas con bebé",
     },
     {
       src: "/assets/retratos/sonia-chapelet-retrato-madre-amamantando.jpg",
       alt: "Madre amamantando, retrato íntimo",
     },
     {
+      src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-sentada-en-piso-envuelta-en-tules.jpg",
+      alt: "Retrato de embarazo envuelta en tul",
+    },
+    {
       src: "/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg",
       alt: "Madre con bebé, retrato en silla",
     },
     {
-      src: "/assets/retratos/sonia-chapelet-madre-sentada-con-pie-en-silla-amamantando.jpg",
-      alt: "Madre amamantando en interior con plantas",
+      src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-parada-frente-a-espejo.jpg",
+      alt: "Mujer embarazada frente al espejo",
     },
     {
-      src: "/assets/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg",
-      alt: "Madre de espaldas con bebé",
+      src: "/assets/retratos/sonia-chapelet-retrato-nin_a-adolescente-morena-sentada-en-escalera-con-sombrilla-transparente.jpg",
+      alt: "Adolescente en escalera con sombrilla transparente",
     },
   ];
 
@@ -165,10 +149,7 @@ function App() {
         {activeSection === "home" && (
           <section className="home-section">
             <div className="hero-image">
-              <img
-                src="/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg"
-                alt={t.alt.hero}
-              />
+              <img src="/assets/couple_1.jpg" alt={t.alt.hero} />
             </div>
             <h1 className="quote">{t.home.quote}</h1>
           </section>
