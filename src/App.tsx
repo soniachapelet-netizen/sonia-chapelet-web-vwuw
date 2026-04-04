@@ -470,4 +470,170 @@ function App() {
   );
 }
 
+export default App;            aria-label={item.alt}
+          >
+            <img src={item.src} alt={item.alt} loading="lazy" />
+          </button>
+        ))}
+      </div>
+    );
+  };
+
+  return (
+    <div className="app">
+      <header className="site-header">
+        <div className="header-content">
+          <button
+            type="button"
+            className="site-title"
+            onClick={() => goToSection("home")}
+          >
+            Sonia Chapelet
+          </button>
+
+          <nav className="nav-links">
+            <button 
+              className={activeSection === "sobre-mi" ? "active" : ""} 
+              onClick={() => goToSection("sobre-mi")}
+            >
+              {t.nav.about}
+            </button>
+            <button 
+              className={activeSection === "servicios" ? "active" : ""} 
+              onClick={() => goToSection("servicios")}
+            >
+              {t.nav.services}
+            </button>
+            <button 
+              className={activeSection === "portfolio" ? "active" : ""} 
+              onClick={() => goToSection("portfolio")}
+            >
+              {t.nav.portfolio}
+            </button>
+            <button 
+              className={activeSection === "contacto" ? "active" : ""} 
+              onClick={() => goToSection("contacto")}
+            >
+              {t.nav.contact}
+            </button>
+          </nav>
+
+          <div className="lang-switch">
+            <button 
+              className={language === "es" ? "active" : ""} 
+              onClick={() => setLanguage("es")}
+            >
+              ES
+            </button>
+            <span>/</span>
+            <button 
+              className={language === "en" ? "active" : ""} 
+              onClick={() => setLanguage("en")}
+            >
+              EN
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        {activeSection === "home" && (
+          <section className="home-section">
+            <div className="hero-image">
+              <img src="/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg" alt={t.alt.hero} />
+            </div>
+            <h1 className="quote">{t.home.quote}</h1>
+          </section>
+        )}
+
+        {activeSection === "sobre-mi" && (
+          <section className="about-section">
+            <div className="section-content">
+              <h2>{t.about.title}</h2>
+              <p>{t.about.p1}</p>
+              <p>{t.about.p2}</p>
+            </div>
+          </section>
+        )}
+
+        {activeSection === "servicios" && (
+          <section className="services-section">
+            <div className="section-content">
+              <h2>{t.services.title}</h2>
+              <div className="services-grid">
+                <div className="service-item">
+                  <h3>{t.services.artisticTitle}</h3>
+                  <p>{t.services.artisticText}</p>
+                </div>
+                <div className="service-item">
+                  <h3>{t.services.commercialTitle}</h3>
+                  <p>{t.services.commercialText}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {activeSection === "portfolio" && (
+          <section className="portfolio-section">
+            <div className="section-content">
+              <h2>{t.portfolio.title}</h2>
+              <nav className="portfolio-nav">
+                <button
+                  className={activePortfolioCategory === "retratos" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("retratos")}
+                >
+                  {t.portfolio.retratos}
+                </button>
+                <button
+                  className={activePortfolioCategory === "trabajo" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("trabajo")}
+                >
+                  {t.portfolio.trabajo}
+                </button>
+                <button
+                  className={activePortfolioCategory === "proyectos" ? "active" : ""}
+                  onClick={() => setActivePortfolioCategory("proyectos")}
+                >
+                  {t.portfolio.proyectos}
+                </button>
+              </nav>
+
+              {activePortfolioCategory === "retratos" && renderPortfolioGrid(retratos)}
+              {activePortfolioCategory === "trabajo" && renderPortfolioGrid(trabajo)}
+              {activePortfolioCategory === "proyectos" && renderPortfolioGrid(proyectos)}
+            </div>
+          </section>
+        )}
+
+        {activeSection === "contacto" && (
+          <section className="contact-section">
+            <div className="section-content">
+              <h2>{t.contact.title}</h2>
+              <p>{t.contact.intro}</p>
+              <div className="contact-details">
+                <p><strong>{t.contact.location}</strong></p>
+                <p>{t.contact.email}: <a href="mailto:hola@soniachapelet.com">hola@soniachapelet.com</a></p>
+                <p>{t.contact.instagram}: <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@soniachapelet</a></p>
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+
+      {lightbox && (
+        <div className="lightbox" onClick={() => setLightbox(null)}>
+          <button className="close-lightbox" aria-label={t.alt.close}>&times;</button>
+          <img src={lightbox} alt={t.alt.zoom} onClick={(e) => e.stopPropagation()} />
+        </div>
+      )}
+
+      <footer className="site-footer">
+        <p>&copy; {new Date().getFullYear()} Sonia Chapelet</p>
+      </footer>
+    </div>
+  );
+}
+
 export default App;
+
