@@ -167,54 +167,62 @@ function App() {
 
   const retratos: PortfolioItem[] = [
     {
-      src: "/assets/portrait_1.jpg",
-      alt: "Retrato familiar en exterior",
+      src: "/assets/retratos/sonia-chapelet-madre-de-espaldas-con-bebe.jpg",
+      alt: "retrato de madre de espaldas con su bebé en brazos en un retrato íntimo",
     },
     {
-      src: "/assets/portrait_2.jpg",
-      alt: "Retrato familiar íntimo",
+      src: "/assets/retratos/sonia-chapelet-madre-con-bebe-torso-desnudo-sentada-en-silla.jpg",
+      alt: "retrato de madre con torso desnudo con bebe sentada en silla, fotografía de maternidad luz natural suave",
     },
     {
-      src: "/assets/maternity_1.jpg",
-      alt: "Maternidad en tonos suaves",
+      src: "/assets/retratos/sonia-chapelet-retrato-adolescente-sentada-en-escalera-con-paraguas-transparente.jpg",
+      alt: "Retrato de niña adolescente morena sentada en una escalera de madera sosteniendo una sombrilla transparente con luz natural suave",
     },
     {
-      src: "/assets/portrait_2.jpg",
-      alt: "Retrato familiar íntimo en exterior",
+      src: "/assets/retratos/sonia-chapelet-retrato-madre-amamantando.jpg",
+      alt: "Madre amamantando a su bebé con luz natural, fotografía de maternidad",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-mujer-embarazada-parada-de-espaldas-frente-espejo.jpg",
+      alt: "Retrato de mujer embarazada parada de espaldas frente a un espejo con fondo blanco, fotografía de maternidad",
+    },
+    {
+      src: "/assets/retratos/sonia-chapelet-retrato-mujer-embarazada-sentada-en-el-piso-envuelta-en-tules.jpg",
+      alt: "Retrato de mujer embarazada sentada en el piso envuelta en tules, fotografía de maternidad",
     },
   ];
 
   const trabajo: PortfolioItem[] = [
     {
-      src: "/assets/trabajo-bebe-1.png",
-      alt: "Bebé dormida con tutú rosa",
+      src: "/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg",
+      alt: "Bebé durmiendo la siesta bajo un arbol en un canasto con luz natural suave",
     },
     {
-      src: "/assets/trabajo-bebe-2.png",
-      alt: "Bebé dormido arropado en exterior",
+      src: "/assets/trabajo/sonia-chapelet-madre-sentada-con-pie-en-silla-amamantando.jpg",
+      alt: "Madre amamantando sentada en bajo un arbol con pie en otra silla con luz natural suave",
     },
     {
-      src: "/assets/maternity_2.jpg",
-      alt: "Trabajo fotográfico de maternidad",
+      src: "/assets/trabajo/sonia-chapelet-retrato-niña-recien-nacida-durmiendo-con-tutu.jpg",
+      alt: "Bebé recien nacida durmiendo con tutu rosa, foto newborn",
     },
   ];
 
   const proyectos: PortfolioItem[] = [
     {
-      src: "/assets/proyecto-artistico-1.png",
-      alt: "Mujer con vestido turquesa junto a faro",
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg",
+      alt: "Retrato de mujer joven rubia con luz natural, fotografía autoral",
     },
     {
-      src: "/assets/proyecto-artistico-2.png",
-      alt: "Retrato editorial en abrigo claro",
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-morena-delante-de-un-faro-en-alicante.jpg",
+      alt: "Retrato de mujer morena frente a un faro en Alicante, fotografía artística en exterior",
     },
     {
-      src: "/assets/proyecto-artistico-3.png",
-      alt: "Retrato de mujer rubia con luz natural",
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-rubia-joven-con-abrigo-simil-piel.jpg",
+      alt: "Retrato de mujer rubia con abrigo simil piel, fotografía editorial con luz cálida",
     },
     {
-      src: "/assets/proyecto-artistico-4.png",
-      alt: "Retrato de perfil con sol en el rostro",
+      src: "/assets/proyectos/sonia-chapelet-retrato-perfil-mujer-joven-rubia-con-sol-en-la-cara.jpg",
+      alt: "Retrato de perfil de mujer joven con luz de sol en el rostro, fotografía autoral",
     },
   ];
 
