@@ -9,10 +9,10 @@ import { Seo } from "../components/Seo";
 import {
   heroSrc,
   proyectos,
-  retratos,
   trabajo,
   type PortfolioItem,
 } from "../data/portfolio";
+import { retratos } from "../data/retratos";
 import { getSeo } from "../i18n/seo";
 import { getTranslations } from "../i18n/strings";
 import type { Language } from "../i18n/strings";
