@@ -43,6 +43,10 @@ export function getTranslations(language: Language) {
         intro:
           "Si deseas información sobre sesiones, colaboraciones o encargos profesionales, puedes escribirme directamente.",
         location: "Alicante, España",
+        phone: "Teléfono",
+        phoneDisplay: "+34 661 142 082",
+        whatsapp: "WhatsApp",
+        whatsappCta: "Escribir por WhatsApp",
         email: "Email",
         instagram: "Instagram",
       },
@@ -92,6 +96,10 @@ export function getTranslations(language: Language) {
         intro:
           "If you would like information about sessions, collaborations, or professional commissions, you can write to me directly.",
         location: "Alicante, Spain",
+        phone: "Phone",
+        phoneDisplay: "+34 661 142 082",
+        whatsapp: "WhatsApp",
+        whatsappCta: "Message on WhatsApp",
         email: "Email",
         instagram: "Instagram",
       },

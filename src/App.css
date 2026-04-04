@@ -377,6 +377,25 @@ a {
   font-size: 1rem;
 }
 
+.contact-whatsapp-btn {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #25d366;
+  border-radius: 999px;
+  text-decoration: none;
+  width: fit-content;
+  transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.contact-whatsapp-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
 /* LIGHTBOX */
 
 .lightbox {

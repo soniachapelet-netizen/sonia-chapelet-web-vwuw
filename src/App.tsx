@@ -62,6 +62,10 @@ function App() {
         intro:
           "Si deseas información sobre sesiones, colaboraciones o encargos profesionales, puedes escribirme directamente.",
         location: "Alicante, España",
+        phone: "Teléfono",
+        phoneDisplay: "+34 661 142 082",
+        whatsapp: "WhatsApp",
+        whatsappCta: "Escribir por WhatsApp",
         email: "Email",
         instagram: "Instagram",
       },
@@ -89,6 +93,10 @@ function App() {
         intro:
           "If you would like information about sessions, collaborations, or professional commissions, you can write to me directly.",
         location: "Alicante, Spain",
+        phone: "Phone",
+        phoneDisplay: "+34 661 142 082",
+        whatsapp: "WhatsApp",
+        whatsappCta: "Message on WhatsApp",
         email: "Email",
         instagram: "Instagram",
       },
@@ -251,6 +259,23 @@ function App() {
             <p className="contact-intro">{t.contact.intro}</p>
             <p className="contact-location">{t.contact.location}</p>
             <div className="contact-details">
+              <div className="contact-item">
+                <span className="contact-label">{t.contact.phone}</span>
+                <a href="tel:+34661142082" className="contact-link">
+                  {t.contact.phoneDisplay}
+                </a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-label">{t.contact.whatsapp}</span>
+                <a
+                  href="https://wa.me/34661142082"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-whatsapp-btn"
+                >
+                  {t.contact.whatsappCta}
+                </a>
+              </div>
               <div className="contact-item">
                 <span className="contact-label">{t.contact.email}</span>
                 <a href="mailto:soniachapelet@gmail.com?subject=Consulta%20fotografía" className="contact-link">
