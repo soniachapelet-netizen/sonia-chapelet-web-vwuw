@@ -48,6 +48,29 @@ a {
   background: var(--bg);
 }
 
+.site-main {
+  padding-top: var(--header-height);
+}
+
+.section-content {
+  width: min(var(--container), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 56px;
+}
+
+.section-content h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+
+.section-content > p {
+  max-width: 760px;
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+
 /* HEADER */
 
 .site-header {
@@ -96,8 +119,9 @@ a {
 .nav-links button {
   position: relative;
   padding: 4px 0;
-  font-size: 0.96rem;
-  letter-spacing: 0.04em;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -138,6 +162,11 @@ a {
   opacity: 1;
 }
 
+.lang-switch button.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .lang-divider {
   opacity: 0.45;
 }
@@ -154,6 +183,7 @@ a {
   min-height: calc(100vh - var(--header-height));
   display: flex;
   flex-direction: column;
+  padding-bottom: 32px;
 }
 
 .inner-view {
@@ -195,9 +225,11 @@ a {
 }
 
 .hero-main-image {
+  display: block;
   width: 100%;
   min-height: 56vh;
-  height: 100%;
+  height: auto;
+  max-height: min(78vh, 920px);
   object-fit: cover;
   object-position: center;
   border-radius: 22px;
@@ -369,6 +401,15 @@ a {
   border-radius: 16px;
 }
 
+.lightbox img {
+  max-width: 100%;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
 .lightbox-close {
   position: absolute;
   top: -16px;
@@ -394,8 +435,8 @@ a {
     grid-template-columns: 1fr;
     justify-items: center;
     align-content: center;
-    gap: 10px;
-    padding: 14px 0;
+    gap: 8px;
+    padding: 10px 0;
   }
 
   .site-title,
@@ -410,7 +451,8 @@ a {
 
   .inner-view,
   .hero-top,
-  .hero-stage {
+  .hero-stage,
+  .section-content {
     width: min(var(--container), calc(100% - 28px));
   }
 
@@ -427,7 +469,7 @@ a {
 
 @media (max-width: 640px) {
   :root {
-    --header-height: 136px;
+    --header-height: 118px;
   }
 
   .site-title {
@@ -445,8 +487,9 @@ a {
 
   .inner-view,
   .hero-top,
-  .hero-stage {
-    width: calc(100% - 24px);
+  .hero-stage,
+  .section-content {
+    width: min(var(--container), calc(100% - 24px));
   }
 
   .hero-top {
@@ -454,21 +497,30 @@ a {
   }
 
   .hero-quote {
-    font-size: clamp(2rem, 10vw, 3.2rem);
-    max-width: 10ch;
+    font-size: clamp(1.65rem, 5.2vw, 2.75rem);
+    max-width: none;
+    padding: 0 8px;
+    white-space: normal;
   }
 
   .hero-main-image {
-    min-height: 46vh;
+    min-height: 42vh;
+    max-height: 58vh;
     border-radius: 16px;
   }
 
   .portfolio-grid {
-    column-count: 1;
-    column-gap: 14px;
+    column-count: 2;
+    column-gap: 10px;
   }
 
   .portfolio-categories {
     gap: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .portfolio-grid {
+    column-count: 1;
   }
 }

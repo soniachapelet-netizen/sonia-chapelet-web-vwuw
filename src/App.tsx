@@ -145,27 +145,74 @@ function App() {
           </div>
         </div>
       </header>
-      <main>
+      <main className="site-main">
         {activeSection === "home" && (
-          <section className="home-section">
-            <div className="hero-image">
-              <img src="/assets/couple_1.jpg" alt={t.alt.hero} />
+          <section className="home-view">
+            <div className="hero-top">
+              <h1 className="hero-quote">{t.home.quote}</h1>
             </div>
-            <h1 className="quote">{t.home.quote}</h1>
+            <div className="hero-stage">
+              <img className="hero-main-image" src="/assets/couple_1.jpg" alt={t.alt.hero} />
+            </div>
           </section>
         )}
-        {activeSection === "sobre-mi" && <section className="section-content"><h2>{t.about.title}</h2><p>{t.about.p1}</p></section>}
+        {activeSection === "sobre-mi" && (
+          <section className="section-content">
+            <h2>{t.about.title}</h2>
+            <p>{t.about.p1}</p>
+          </section>
+        )}
+        {activeSection === "servicios" && (
+          <section className="section-content">
+            <h2>{t.services.title}</h2>
+            <div className="services-grid">
+              <article className="service-card">
+                <h3>{t.services.artisticTitle}</h3>
+                <p>{t.services.artisticText}</p>
+              </article>
+              <article className="service-card">
+                <h3>{t.services.commercialTitle}</h3>
+                <p>{t.services.commercialText}</p>
+              </article>
+            </div>
+          </section>
+        )}
         {activeSection === "portfolio" && (
           <section className="section-content">
             <h2>{t.portfolio.title}</h2>
-            <nav className="portfolio-nav">
-              <button onClick={() => setActivePortfolioCategory("retratos")}>{t.portfolio.retratos}</button>
-              <button onClick={() => setActivePortfolioCategory("trabajo")}>{t.portfolio.trabajo}</button>
-              <button onClick={() => setActivePortfolioCategory("proyectos")}>{t.portfolio.proyectos}</button>
+            <nav className="portfolio-nav portfolio-categories" aria-label="Portfolio">
+              <button
+                type="button"
+                className={activePortfolioCategory === "retratos" ? "active" : ""}
+                onClick={() => setActivePortfolioCategory("retratos")}
+              >
+                {t.portfolio.retratos}
+              </button>
+              <button
+                type="button"
+                className={activePortfolioCategory === "trabajo" ? "active" : ""}
+                onClick={() => setActivePortfolioCategory("trabajo")}
+              >
+                {t.portfolio.trabajo}
+              </button>
+              <button
+                type="button"
+                className={activePortfolioCategory === "proyectos" ? "active" : ""}
+                onClick={() => setActivePortfolioCategory("proyectos")}
+              >
+                {t.portfolio.proyectos}
+              </button>
             </nav>
             {activePortfolioCategory === "retratos" && renderPortfolioGrid(retratos)}
             {activePortfolioCategory === "trabajo" && renderPortfolioGrid(trabajo)}
             {activePortfolioCategory === "proyectos" && renderPortfolioGrid(proyectos)}
+          </section>
+        )}
+        {activeSection === "contacto" && (
+          <section className="section-content">
+            <h2>{t.contact.title}</h2>
+            <p className="contact-intro">{t.contact.intro}</p>
+            <p className="contact-location">{t.contact.location}</p>
           </section>
         )}
       </main>
