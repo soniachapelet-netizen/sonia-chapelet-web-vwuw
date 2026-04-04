@@ -201,16 +201,20 @@ function App() {
 
   const proyectos: PortfolioItem[] = [
     {
-      src: "/assets/newborn_1.jpg",
-      alt: "Proyecto artístico de retrato",
+      src: "/assets/proyecto-artistico-1.png",
+      alt: "Mujer con vestido turquesa junto a faro",
     },
     {
-      src: "/assets/portrait_1.jpg",
-      alt: "Proyecto artístico de maternidad",
+      src: "/assets/proyecto-artistico-2.png",
+      alt: "Retrato editorial en abrigo claro",
     },
     {
-      src: "/assets/portrait_2.jpg",
-      alt: "Proyecto artístico de recién nacido",
+      src: "/assets/proyecto-artistico-3.png",
+      alt: "Retrato de mujer rubia con luz natural",
+    },
+    {
+      src: "/assets/proyecto-artistico-4.png",
+      alt: "Retrato de perfil con sol en el rostro",
     },
   ];
 
