@@ -100,20 +100,20 @@ function App() {
 
   const proyectos: PortfolioItem[] = [
     {
-      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg",
-      alt: "Retrato de mujer joven rubia",
-    },
-    {
       src: "/assets/proyectos/sonia-chapelet-retrato-mujer-morena-delante-de-un-faro-en-alicante.jpg",
       alt: "Retrato con faro en Alicante",
     },
     {
-      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-rubia-joven-con-abrigo-simil-piel.jpg",
-      alt: "Retrato editorial con abrigo",
-    },
-    {
       src: "/assets/proyectos/sonia-chapelet-retrato-perfil-mujer-joven-rubia-con-sol-en-la-cara.jpg",
       alt: "Retrato de perfil con luz de sol",
+    },
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg",
+      alt: "Retrato de mujer joven rubia",
+    },
+    {
+      src: "/assets/proyectos/sonia-chapelet-retrato-mujer-rubia-con-abrigo-simil-piel.jpg",
+      alt: "Retrato con abrigo simil piel",
     },
   ];
 
