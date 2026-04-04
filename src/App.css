@@ -201,11 +201,11 @@ a {
 }
 
 .hero-quote {
-  font-size: clamp(2.2rem, 5vw, 5rem);
-  line-height: 0.95;
+  font-size: clamp(1.65rem, 2.6vw, 2.65rem);
+  line-height: 1.08;
   font-weight: 300;
-  letter-spacing: -0.035em;
-  max-width: none;
+  letter-spacing: -0.028em;
+  max-width: min(42rem, 100%);
   text-align: center;
   margin: 0 auto;
 }
@@ -219,18 +219,19 @@ a {
   margin: 0 auto;
   flex: 1 1 auto;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 26px;
   min-height: 0;
 }
 
 .hero-main-image {
   display: block;
-  width: 100%;
-  min-height: 56vh;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  max-height: min(78vh, 920px);
-  object-fit: cover;
+  max-height: min(62vh, 720px);
+  object-fit: contain;
   object-position: center;
   border-radius: 22px;
 }
@@ -497,15 +498,14 @@ a {
   }
 
   .hero-quote {
-    font-size: clamp(1.65rem, 5.2vw, 2.75rem);
+    font-size: clamp(1.5rem, 4.5vw, 2.1rem);
     max-width: none;
     padding: 0 8px;
     white-space: normal;
   }
 
   .hero-main-image {
-    min-height: 42vh;
-    max-height: 58vh;
+    max-height: min(52vh, 480px);
     border-radius: 16px;
   }
 
