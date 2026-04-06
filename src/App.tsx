@@ -226,14 +226,14 @@ function App() {
           </section>
         )}
         {activeSection === "servicios" && (
-          <section className="section-content">
+          <section className="section-content services-section">
             <h2>{t.services.title}</h2>
             <div className="services-grid">
-              <article className="service-card">
+              <article className="service-card service-card--artistic">
                 <h3>{t.services.artisticTitle}</h3>
                 <p>{t.services.artisticText}</p>
               </article>
-              <article className="service-card">
+              <article className="service-card service-card--commercial">
                 <h3>{t.services.commercialTitle}</h3>
                 <p>{t.services.commercialText}</p>
               </article>

@@ -286,17 +286,53 @@ a {
   gap: 20px;
 }
 
+.services-section h2 {
+  font-size: clamp(1.35rem, 1.8vw, 1.75rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.72;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
 .service-card {
+  position: relative;
+  isolation: isolate;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: var(--panel);
+  background: rgba(255, 255, 255, 0.72);
   padding: 24px;
+  overflow: hidden;
 }
 
 .service-card h3 {
   font-size: 1.12rem;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.service-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card--artistic::before {
+  background-image: url("/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg");
+}
+
+.service-card--commercial::before {
+  background-image: url("/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg");
 }
 
 /* PORTFOLIO — mosaico editorial tipo galería a ancho completo */
