@@ -316,9 +316,9 @@ a {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center 38%;
   filter: grayscale(1);
-  opacity: 0.1;
+  opacity: 0.08;
   z-index: 0;
 }
 
@@ -329,10 +329,14 @@ a {
 
 .service-card--artistic::before {
   background-image: url("/assets/proyectos/sonia-chapelet-retrato-mujer-joven-rubia.jpg");
+  background-size: 120%;
+  background-position: center 28%;
 }
 
 .service-card--commercial::before {
   background-image: url("/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg");
+  background-size: 145%;
+  background-position: center 84%;
 }
 
 .services-cta {
