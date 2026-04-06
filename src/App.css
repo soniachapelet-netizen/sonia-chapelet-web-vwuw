@@ -335,6 +335,34 @@ a {
   background-image: url("/assets/trabajo/sonia-chapelet-fotografia-bebe-siesta-bajo-un-arbol.jpg");
 }
 
+.services-cta {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.services-cta p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.services-cta-btn {
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.services-cta-btn:hover {
+  background: var(--text);
+  color: #fff;
+}
+
 /* PORTFOLIO — mosaico editorial tipo galería a ancho completo */
 
 .section-content.section-portfolio {
