@@ -56,7 +56,16 @@ function App() {
         commercialText:
           "Imagen de producto, marca personal y contenidos visuales para comunicación y presencia online.",
       },
-      portfolio: { title: "Portfolio", retratos: "Retratos", trabajo: "Trabajo", proyectos: "Proyectos artísticos" },
+      portfolio: {
+        title: "Portfolio",
+        retratos: "Retratos",
+        trabajo: "Trabajo",
+        proyectos: "Proyectos artísticos",
+        projectTitle: "Tantos sueños como almas",
+        projectIntro1:
+          "Un siglo después de que mis antepasadas partieran, vuelvo sobre sus pasos para cerrar un ciclo transgeneracional. Este trabajo es un espacio para explorar las emociones de mujeres que, como yo, habitan tierra ajena, cargando con sus raíces mientras despliegan nuevas alas.",
+        projectIntro2: "Explora una selección de la serie en construcción.",
+      },
       contact: {
         title: "Contacto",
         intro:
@@ -87,7 +96,16 @@ function App() {
         commercialText:
           "Product imagery, personal branding, and visual content for communication and online presence.",
       },
-      portfolio: { title: "Portfolio", retratos: "Portraits", trabajo: "Work", proyectos: "Artistic projects" },
+      portfolio: {
+        title: "Portfolio",
+        retratos: "Portraits",
+        trabajo: "Work",
+        proyectos: "Artistic projects",
+        projectTitle: "As many dreams as souls",
+        projectIntro1:
+          "A century after my ancestors departed, I retrace their steps to close a transgenerational cycle. This work is a space to explore the emotions of women who, like me, inhabit foreign land while carrying their roots and unfolding new wings.",
+        projectIntro2: "Explore a selection from this series in progress.",
+      },
       contact: {
         title: "Contact",
         intro:
@@ -249,6 +267,13 @@ function App() {
                   {t.portfolio.proyectos}
                 </button>
               </nav>
+              {activePortfolioCategory === "proyectos" && (
+                <div className="project-series-intro">
+                  <h3>{t.portfolio.projectTitle}</h3>
+                  <p>{t.portfolio.projectIntro1}</p>
+                  <p>{t.portfolio.projectIntro2}</p>
+                </div>
+              )}
             </div>
             <div className="portfolio-grid-wrap">
               {activePortfolioCategory === "retratos" && renderPortfolioGrid(retratos)}
