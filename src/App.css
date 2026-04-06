@@ -334,6 +334,7 @@ a {
   margin: 0 0 10px;
   font-size: 1rem;
   line-height: 1.65;
+  text-align: justify;
 }
 
 .portfolio-view {

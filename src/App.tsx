@@ -63,7 +63,7 @@ function App() {
         proyectos: "Proyectos artísticos",
         projectTitle: "Tantos sueños como almas",
         projectIntro1:
-          "Un siglo después de que mis antepasadas partieran, vuelvo sobre sus pasos para cerrar un ciclo transgeneracional. Este trabajo es un espacio para explorar las emociones de mujeres que, como yo, habitan tierra ajena, cargando con sus raíces mientras despliegan nuevas alas.",
+          "Un siglo después de que mis antepasados partieran, vuelvo sobre sus pasos para cerrar un ciclo transgeneracional. Este trabajo es un espacio para explorar las emociones de mujeres que, como yo, habitan tierra ajena, cargando con sus raíces mientras despliegan nuevas alas.",
         projectIntro2: "Explora una selección de la serie en construcción.",
       },
       contact: {
